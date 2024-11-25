@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ClipboardX User Manual</title>
+<style>
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #1d1d1f;
+    background-color: #ffffff;
+  }
+
+  header {
+    background-color: #f5f5f7;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  header h1 {
+    font-size: 36px;
+    margin: 0;
+    font-weight: 600;
+  }
+
+  nav {
+    background-color: #ffffff;
+    border-bottom: 1px solid #d2d2d7;
+  }
+
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0 20px;
+    display: flex;
+    overflow-x: auto;
+  }
+
+  nav li {
+    margin-right: 20px;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: #0071e3;
+    font-weight: 500;
+    padding: 14px 0;
+    display: block;
+  }
+
+  nav a:hover {
+    color: #005bb5;
+  }
+
+  main {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  main h2 {
+    font-size: 28px;
+    margin-top: 40px;
+    font-weight: 600;
+  }
+
+  main p, main li {
+    font-size: 17px;
+    line-height: 1.6;
+  }
+
+  main code {
+    background-color: #f5f5f7;
+    padding: 2px 4px;
+    border-radius: 4px;
+    font-family: Menlo, Monaco, Consolas, 'Courier New', monospace;
+  }
+
+  main ol, main ul {
+    margin-left: 20px;
+  }
+
+  footer {
+    background-color: #f5f5f7;
+    padding: 20px;
+    text-align: center;
+    font-size: 13px;
+    color: #6e6e73;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    header h1 {
+      font-size: 28px;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    nav ul {
+      flex-direction: column;
+    }
+
+    nav li {
+      margin-bottom: 10px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>ClipboardX User Manual</h1>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="#showing-clipboardx">Showing ClipboardX</a></li>
+    <li><a href="#flash-paste">Flash Paste with ⌘V</a></li>
+    <li><a href="#smart-screen-record">Smart Screen Record</a></li>
+    <li><a href="#instant-preview">Instant Preview</a></li>
+    <li><a href="#multiple-selection">Better Multiple Selection</a></li>
+    <li><a href="#drop-mode">Drop Mode</a></li>
+    <li><a href="#snapshot-area">Easy Snapshot Area</a></li>
+    <li><a href="#closing-clipboardx">Closing ClipboardX</a></li>
+  </ul>
+</nav>
+
+<main>
+  <section id="showing-clipboardx">
+    <h2>Showing ClipboardX</h2>
+    <p><strong>Shortcut:</strong> <code>⌥V</code> (Option + V)</p>
+    <p>Press <code>⌥V</code> to open ClipboardX directly under your cursor. This provides quick access to your clipboard history without disrupting your workflow.</p>
+  </section>
+
+  <section id="flash-paste">
+    <h2>Flash Paste with ⌘V</h2>
+    <p><strong>Shortcut:</strong> <code>⌘V</code> (Command + V) with additional navigation while holding <code>⌘</code></p>
+    <ol>
+      <li><strong>Initiate Flash Paste:</strong> Press <code>⌘V</code> and keep holding the <code>⌘</code> key.</li>
+      <li><strong>Navigate Items:</strong>
+        <ul>
+          <li>While holding <code>⌘</code>, press <code>V</code> repeatedly to cycle through clipboard items.</li>
+          <li>Press a number key (e.g., <code>3</code>) while holding <code>⌘</code> to select a specific item by its position.</li>
+          <li>Move your cursor over the desired item while holding <code>⌘</code>.</li>
+        </ul>
+      </li>
+      <li><strong>Paste Selected Item:</strong> Release the <code>⌘</code> key to paste the highlighted item.</li>
+    </ol>
+    <p>This transforms your <code>⌘V</code> into a visual, interactive paste shortcut—similar to <code>⌘Tab</code> for app switching—while retaining the functionality of a regular paste command.</p>
+  </section>
+
+  <section id="smart-screen-record">
+    <h2>Smart Screen Record</h2>
+    <p><strong>Shortcut:</strong> <code>⌥R</code> (Option + R)</p>
+    <ol>
+      <li><strong>Start Recording:</strong> Hold down <code>⌥R</code> and release it to instantly begin a screen recording.</li>
+      <li><strong>Stop Recording:</strong> Press <code>⌥R</code> again to finish and save the recording.</li>
+    </ol>
+    <p>This feature allows you to start and stop screen recordings effortlessly.</p>
+  </section>
+
+  <section id="instant-preview">
+    <h2>Instant Preview</h2>
+    <p><strong>Shortcut:</strong> <code>Tab</code></p>
+    <p>While browsing your clipboard items, hold the <code>Tab</code> key to preview the content of the selected item instantly. This helps you quickly verify the content before pasting or using it.</p>
+  </section>
+
+  <section id="multiple-selection">
+    <h2>Better Multiple Selection</h2>
+    <p><strong>Shortcut:</strong> <code>Shift</code> + Cursor Movement</p>
+    <p>Hold down the <code>Shift</code> key and move your cursor over the items you wish to select. The items will be highlighted for multiple selection, making it easy to select multiple clipboard items for batch actions.</p>
+  </section>
+
+  <section id="drop-mode">
+    <h2>Drop Mode</h2>
+    <p><strong>Shortcut:</strong> <code>⌥D</code> (Option + D)</p>
+    <ol>
+      <li><strong>Activate Drop Mode:</strong> Press <code>⌥D</code> to open the Drop Mode window under your cursor.</li>
+      <li><strong>Drop Content:</strong> Click on an item to instantly insert its content at your cursor's location in the active application.</li>
+    </ol>
+    <p>This feature lets you quickly drop content with a single click.</p>
+  </section>
+
+  <section id="snapshot-area">
+    <h2>Easy Snapshot Area</h2>
+    <p><strong>Shortcut:</strong> <code>⌥S</code> (Option + S)</p>
+    <p>Hold down <code>⌥S</code> and drag your cursor to select the area you want to capture. Release to capture and save the snapshot to your clipboard. This provides a fast way to take area-specific screenshots.</p>
+  </section>
+
+  <section id="closing-clipboardx">
+    <h2>Closing ClipboardX</h2>
+    <p><strong>Shortcut:</strong> <code>Esc</code></p>
+    <p>Press the <code>Esc</code> key at any time to close ClipboardX and return to your work.</p>
+  </section>
+</main>
+
+<footer>
+  <p>© 2023 ClipboardX. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
