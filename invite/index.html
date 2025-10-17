@@ -10,37 +10,24 @@
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
     <script>
-        // Extract invite code from URL path
-        function getInviteCode() {
-            const path = window.location.pathname;
-            const parts = path.split('/');
-            const inviteIndex = parts.indexOf('invite');
-            if (inviteIndex !== -1 && parts[inviteIndex + 1]) {
-                return parts[inviteIndex + 1];
-            }
-            return null;
-        }
-
-        // Handle invite code on page load
-        window.addEventListener('DOMContentLoaded', function() {
-            const inviteCode = getInviteCode();
-            if (inviteCode) {
-                // You can customize the page based on the invite code
-                console.log('Invite code:', inviteCode);
-                
-                // Example: Update the subtitle to show invite code
-                const subtitle = document.querySelector('.subtitle');
-                if (subtitle) {
-                    subtitle.innerHTML = `You've been invited to try ClipboardX -<br>Ultimate Clipboard App #1!`;
+        // Add timestamp to prevent caching
+        const timestamp = new Date().getTime();
+        document.addEventListener('DOMContentLoaded', function() {
+            // Update all images
+            document.querySelectorAll('img').forEach(img => {
+                const src = img.getAttribute('src');
+                if (src && !src.includes('?t=')) {
+                    img.src = src.split('?')[0] + '?t=' + timestamp;
                 }
-                
-                // Example: Add invite code to App Store URL
-                const appStoreButton = document.querySelector('.invite-button');
-                if (appStoreButton) {
-                    const baseUrl = 'https://apps.apple.com/ge/app/clipboardx-paste-like-a-pro/id6738006184?mt=12';
-                    appStoreButton.href = `${baseUrl}&invite=${inviteCode}`;
+            });
+            
+            // Update favicon
+            document.querySelectorAll('link[rel="icon"]').forEach(link => {
+                const href = link.getAttribute('href');
+                if (href) {
+                    link.href = href.split('?')[0] + '?t=' + timestamp;
                 }
-            }
+            });
         });
     </script>
     <style>
