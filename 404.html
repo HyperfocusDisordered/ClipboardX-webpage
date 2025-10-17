@@ -22,16 +22,15 @@
         window.addEventListener('DOMContentLoaded', function() {
             const inviteCode = getInviteCode();
             if (inviteCode) {
-                // You can customize the page based on the invite code
                 console.log('Invite code:', inviteCode);
                 
-                // Example: Update the subtitle to show invite code
+                // Update the subtitle to show invite code
                 const subtitle = document.querySelector('.subtitle');
                 if (subtitle) {
                     subtitle.textContent = `You've been invited to try ClipboardX! (Code: ${inviteCode})`;
                 }
                 
-                // Example: Add invite code to App Store URL
+                // Add invite code to App Store URL
                 const appStoreButton = document.querySelector('.invite-button');
                 if (appStoreButton) {
                     const baseUrl = 'https://apps.apple.com/ge/app/clipboardx-paste-like-a-pro/id6738006184?mt=12';
