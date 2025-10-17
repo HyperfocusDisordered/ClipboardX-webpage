@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="/32.png" type="image/png">
+    <link rel="icon" href="/64.png" sizes="64x64" type="image/png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClipboardX Invite</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            padding: 20px;
+            line-height: 1.6;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .content {
+            margin: 0 auto;
+            max-width: 100%;
+            text-align: center;
+        }
+
+        .app-icon {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 30px auto;
+            display: block;
+            border-radius: 20px;
+            box-shadow: 0 8px 32px rgba(255, 255, 255, 0.1);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .subtitle {
+            font-size: 1.3rem;
+            margin-bottom: 40px;
+            color: #cccccc;
+            font-weight: 300;
+        }
+
+        .invite-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #1e90ff, #00bfff);
+            color: white;
+            text-decoration: none;
+            padding: 16px 32px;
+            border-radius: 12px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 16px rgba(30, 144, 255, 0.3);
+            margin: 20px 0;
+        }
+
+        .invite-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(30, 144, 255, 0.4);
+        }
+
+        .features {
+            margin-top: 50px;
+            text-align: left;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .feature {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+
+        .feature-icon {
+            width: 24px;
+            height: 24px;
+            margin-right: 15px;
+            color: #1e90ff;
+        }
+
+        /* Styles for wider screens */
+        @media (min-width: 768px) {
+            .content {
+                max-width: 800px;
+                padding: 40px;
+                background-color: #1a1a1a;
+                box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+                border-radius: 20px;
+            }
+
+            .app-icon {
+                width: 150px;
+                height: 150px;
+            }
+
+            h1 {
+                font-size: 3rem;
+            }
+
+            .subtitle {
+                font-size: 1.4rem;
+            }
+        }
+
+        /* Styles for very large screens */
+        @media (min-width: 1200px) {
+            .content {
+                max-width: 960px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <img src="/64.png" alt="ClipboardX" class="app-icon">
+        <h1>ClipboardX</h1>
+        <p class="subtitle">The ultimate clipboard manager for Mac</p>
+        
+        <a href="https://apps.apple.com/app/clipboardx/id1234567890" class="invite-button" target="_blank">
+            Download on the Mac App Store
+        </a>
+        
+        <div class="features">
+            <div class="feature">
+                <div class="feature-icon">📋</div>
+                <div>Smart clipboard history with instant search</div>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">📌</div>
+                <div>Pin important items for quick access</div>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🎥</div>
+                <div>Built-in screen recording and screenshots</div>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🔒</div>
+                <div>All data stays on your device - completely private</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
