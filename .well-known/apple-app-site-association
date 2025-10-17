@@ -1,0 +1,13 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "E4VXARX5DG.com.yourcompany.clipboardx",
+        "paths": [
+          "/invite/*"
+        ]
+      }
+    ]
+  }
+}
