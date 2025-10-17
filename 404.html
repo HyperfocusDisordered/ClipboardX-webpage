@@ -6,6 +6,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ClipboardX Invite</title>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
     <script>
         // Extract invite code from URL path
         function getInviteCode() {
@@ -122,6 +125,60 @@
             color: #1e90ff;
         }
 
+        .marketing-text {
+            margin: 30px 0;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .main-description {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            color: #e0e0e0;
+            line-height: 1.5;
+        }
+
+        .tagline {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: #1e90ff;
+            margin-top: 20px;
+            margin-bottom: 0;
+        }
+
+        .invite-benefits {
+            margin: 40px 0;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .benefit-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            border-left: 4px solid #1e90ff;
+        }
+
+        .benefit-icon {
+            font-size: 1.5rem;
+            margin-right: 15px;
+            min-width: 30px;
+        }
+
+        .benefit-text {
+            font-size: 1rem;
+            line-height: 1.4;
+        }
+
+        .benefit-text strong {
+            color: #1e90ff;
+        }
+
         /* Styles for wider screens */
         @media (min-width: 768px) {
             .content {
@@ -156,9 +213,54 @@
 </head>
 <body>
     <div class="content">
-        <img src="/64.png" alt="ClipboardX" class="app-icon">
+        <img src="AppIcon-60x60@2x.png?v=2" alt="ClipboardX" class="app-icon">
         <h1>ClipboardX</h1>
-        <p class="subtitle">The ultimate clipboard manager for Mac</p>
+        <p class="subtitle">Ultimate Clipboard App #1</p>
+        
+        <div class="marketing-text">
+            <p class="main-description">Crafted specifically for Developers, Designers, Musicians, Videomakers and other creative professionals.</p>
+            <p class="main-description">ClipboardX completely redefines how you manage and access most of your contents on Mac.</p>
+            <p class="tagline">One App – Thousands of Workflows</p>
+        </div>
+
+        <div class="invite-benefits">
+            <div class="benefit-item">
+                <div class="benefit-icon">🎁</div>
+                <div class="benefit-text">
+                    <strong>30,000 FREE usages</strong> + 3-month free trial
+                </div>
+            </div>
+            <div class="benefit-item">
+                <div class="benefit-icon">⚡</div>
+                <div class="benefit-text">
+                    <strong>BLAZINGLY FAST</strong> - Engineered for speed and ergonomics
+                </div>
+            </div>
+            <div class="benefit-item">
+                <div class="benefit-icon">🎨</div>
+                <div class="benefit-text">
+                    <strong>Perfect Visual Experience</strong> - Photo library-styled collection
+                </div>
+            </div>
+            <div class="benefit-item">
+                <div class="benefit-icon">🔄</div>
+                <div class="benefit-text">
+                    <strong>No Context Switches</strong> - Auto-copies Downloads, Screenshots, Desktop files
+                </div>
+            </div>
+            <div class="benefit-item">
+                <div class="benefit-icon">🤖</div>
+                <div class="benefit-text">
+                    <strong>AI Text Recognition</strong> - Paste images as text with ⌘T
+                </div>
+            </div>
+            <div class="benefit-item">
+                <div class="benefit-icon">🎯</div>
+                <div class="benefit-text">
+                    <strong>Smart Search</strong> - Tagged content with #file #img #link #folder
+                </div>
+            </div>
+        </div>
         
         <a href="https://apps.apple.com/ge/app/clipboardx-paste-like-a-pro/id6738006184?mt=12" class="invite-button" target="_blank">
             Download on the Mac App Store
